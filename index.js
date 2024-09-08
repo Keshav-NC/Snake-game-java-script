@@ -53,11 +53,21 @@ function draw() {
   drawSnake();
   drawScore();
   if (score > 2) {
-    speed = 11;
+    speed = 9;
   }
-  if (score > 5) {
-    speed = 15;
+  if (score > 10) {
+    speed = 10;
   }
+  if (score > 50) {
+    speed = 14;
+  }
+  if (score > 70) {
+    speed = 17;
+  }
+  if (score > 100) {
+    speed = 20;
+  }
+
   setTimeout(draw, 1000 / speed);
 }
 
